@@ -571,7 +571,7 @@ export const ARABES_CATALOG: PerfumeItem[] = [
       { label: "Decant 5 ml", price: "$130 MXN" },
       { label: "Decant 10 ml", price: "$220 MXN" },
     ],
-    fullBottlePrice: "Consultar",
+    fullBottlePrice: "$1,380 MXN",
   },
   {
     id: "ara-kamrah",

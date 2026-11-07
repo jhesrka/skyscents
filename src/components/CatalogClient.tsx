@@ -269,7 +269,7 @@ export function CatalogClient() {
         {/* Category Cards Overlapping the Bottom Edge of Hero Banner */}
         <div className="relative z-20 max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-0 -mt-[41px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-[25px]">
-            {/* Card 1: Designer Perfumes */}
+            {/* Card 1: Perfumes de diseñador */}
             <a
               href="#perfumes-disenador"
               className="group min-h-[76px] md:h-[83.4px] rounded-[12px] bg-sky-bgAlt border border-sky-borderGold px-[18px] sm:px-[20px] py-3 md:py-0 flex items-center gap-[15px] transition-all duration-300 hover:border-sky-gold hover:bg-[#191612] hover:shadow-[0_10px_28px_rgba(0,0,0,0.55)]"
@@ -279,14 +279,14 @@ export function CatalogClient() {
               </div>
               <div>
                 <h2 className="font-playfair font-bold text-[15.5px] sm:text-[16.7px] leading-[1.2] text-sky-cream group-hover:text-sky-goldLight transition-colors">
-                  Designer Perfumes
+                  Perfumes de diseñador
                 </h2>
                 <p className="mt-[3px] sm:mt-[4px] font-montserrat font-normal text-[10.5px] sm:text-[10.8px] text-sky-textDim">
                   3 ml · 5 ml · 10 ml
                 </p>
               </div>
             </a>
-            {/* Card 2: Arabic Perfumes */}
+            {/* Card 2: Perfumes árabes */}
             <a
               href="#perfumes-arabes"
               className="group min-h-[76px] md:h-[83.4px] rounded-[12px] bg-sky-bgAlt border border-sky-borderGold px-[18px] sm:px-[20px] py-3 md:py-0 flex items-center gap-[15px] transition-all duration-300 hover:border-sky-gold hover:bg-[#191612] hover:shadow-[0_10px_28px_rgba(0,0,0,0.55)]"
@@ -296,10 +296,10 @@ export function CatalogClient() {
               </div>
               <div>
                 <h2 className="font-playfair font-bold text-[15.5px] sm:text-[16.7px] leading-[1.2] text-sky-cream group-hover:text-sky-goldLight transition-colors">
-                  Arabic Perfumes
+                  Perfumes árabes
                 </h2>
                 <p className="mt-[3px] sm:mt-[4px] font-montserrat font-normal text-[10.5px] sm:text-[10.8px] text-sky-textDim">
-                  Decants & 100 ml full bottle
+                  Decants y perfume completo 100 ml
                 </p>
               </div>
             </a>

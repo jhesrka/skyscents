@@ -1,4 +1,4 @@
-﻿export type PerfumeTag = "DISEÑADOR" | "ÁRABE";
+export type PerfumeTag = "DISEÑADOR" | "ÁRABE";
 
 export interface PerfumeSizeOption {
   label: "Decant 3 ml" | "Decant 5 ml" | "Decant 10 ml";
@@ -568,8 +568,8 @@ export const ARABES_CATALOG: PerfumeItem[] = [
       fondo: "Almizcle, ámbar, sándalo, pachulí, musgo",
     },
     decants: [
-      { label: "Decant 5 ml", price: "Consultar" },
-      { label: "Decant 10 ml", price: "Consultar" },
+      { label: "Decant 5 ml", price: "$130 MXN" },
+      { label: "Decant 10 ml", price: "$220 MXN" },
     ],
     fullBottlePrice: "Consultar",
   },

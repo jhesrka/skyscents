@@ -456,10 +456,10 @@ export function CatalogClient() {
                 <BenefitDropIcon />
               </div>
               <h3 className="mt-[12px] font-playfair font-bold text-[13.3px] text-sky-goldBright">
-                Custom Decants
+                Decants a tu medida
               </h3>
               <p className="mt-[4px] font-montserrat font-normal text-[10px] text-sky-textDim">
-                Try 3, 5, or 10 ml before buying the bottle.
+                Prueba 3, 5 o 10 ml antes de comprar el frasco.
               </p>
             </div>
             {/* Benefit 2 */}
@@ -468,10 +468,10 @@ export function CatalogClient() {
                 <BenefitBottleIcon />
               </div>
               <h3 className="mt-[12px] font-playfair font-bold text-[13.3px] text-sky-goldBright">
-                Full Bottles
+                Perfume completo
               </h3>
               <p className="mt-[4px] font-montserrat font-normal text-[10px] text-sky-textDim">
-                Available in full size, check current stock.
+                Disponible en tamaño completo, consulta existencia.
               </p>
             </div>
             {/* Benefit 3 */}
@@ -480,10 +480,10 @@ export function CatalogClient() {
                 <WhatsAppOutlineIcon className="w-[15px] h-[14.5px]" />
               </div>
               <h3 className="mt-[12px] font-playfair font-bold text-[13.3px] text-sky-goldBright">
-                Personalized Advice
+                Atención personalizada
               </h3>
               <p className="mt-[4px] font-montserrat font-normal text-[10px] text-sky-textDim">
-                We assist you directly via WhatsApp.
+                Te asesoramos directo por WhatsApp.
               </p>
             </div>
           </div>
@@ -563,10 +563,10 @@ export function CatalogClient() {
               </div>
             ))}
           </div>
-          {/* COURIERS */}
+          {/* PAQUETERÍAS */}
           <div className="mt-[24px]">
             <p className="font-montserrat font-normal text-[9.2px] tracking-[0.14em] text-sky-textDim uppercase">
-              COURIERS
+              PAQUETERÍAS
             </p>
             <div className="mt-[8px] flex flex-wrap items-center justify-start gap-[13.3px]">
               {/* FedEx Pill */}
@@ -590,10 +590,10 @@ export function CatalogClient() {
               </div>
             </div>
           </div>
-          {/* SHIPPING DAYS */}
+          {/* DÍAS DE ENVÍO */}
           <div className="mt-[20px]">
             <p className="font-montserrat font-normal text-[9.2px] tracking-[0.14em] text-sky-textDim uppercase">
-              SHIPPING DAYS
+              DÍAS DE ENVÍO
             </p>
             <div className="mt-[8px] flex flex-col md:flex-row md:items-center gap-4 md:gap-[24px]">
               {/* 7 Day Boxes */}
@@ -648,7 +648,7 @@ export function CatalogClient() {
                   "linear-gradient(135deg, #e1c188 0%, #c9a56a 55%, #b18b4f 100%)",
               }}
             >
-              Chat on WhatsApp
+              Hablar por WhatsApp
             </a>
           </div>
           {/* Contact Socials */}
@@ -726,31 +726,31 @@ export function CatalogClient() {
         <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-0">
           <SectionHeading title="Métodos de pago" />
           <div className="mt-[18px] grid grid-cols-1 md:grid-cols-3 gap-[20px]">
-            {/* Bank Deposit */}
+            {/* Depósito bancario */}
             <div className="h-[91.7px] rounded-[12px] bg-sky-bgDarkBox border border-sky-borderGold flex flex-col items-center justify-center gap-[12px]">
               <div className="text-sky-gold">
                 <PayBankIcon />
               </div>
               <span className="font-montserrat font-semibold text-[11.7px] text-sky-cream">
-                Bank Deposit
+                Depósito bancario
               </span>
             </div>
-            {/* SPEI Wire Transfer */}
+            {/* Transferencia SPEI */}
             <div className="h-[91.7px] rounded-[12px] bg-sky-bgDarkBox border border-sky-borderGold flex flex-col items-center justify-center gap-[12px]">
               <div className="text-sky-gold">
                 <PaySpeiIcon />
               </div>
               <span className="font-montserrat font-semibold text-[11.7px] text-sky-cream">
-                SPEI Wire Transfer
+                Transferencia SPEI
               </span>
             </div>
-            {/* Cash */}
+            {/* Efectivo */}
             <div className="h-[91.7px] rounded-[12px] bg-sky-bgDarkBox border border-sky-borderGold flex flex-col items-center justify-center gap-[12px]">
               <div className="text-sky-gold">
                 <PayCashIcon />
               </div>
               <span className="font-montserrat font-semibold text-[11.7px] text-sky-cream">
-                Cash
+                Efectivo
               </span>
             </div>
           </div>

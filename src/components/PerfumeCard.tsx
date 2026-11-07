@@ -186,9 +186,9 @@ export function PerfumeCard({ item, onOpenLightbox, index = 0 }: PerfumeCardProp
           })}
         </div>
 
-        {/* Full Bottle Row */}
+        {/* Completo Row */}
         {(() => {
-          const isSelected = selectedPresentation?.label === "Completo" || selectedPresentation?.label === "Full Bottle";
+          const isSelected = selectedPresentation?.label === "Completo";
           return (
             <button
               type="button"
@@ -196,7 +196,7 @@ export function PerfumeCard({ item, onOpenLightbox, index = 0 }: PerfumeCardProp
               aria-label={`Seleccionar perfume completo para ${item.name} at ${item.fullBottlePrice}`}
               onClick={() =>
                 setSelectedPresentation({
-                  label: "Full Bottle",
+                  label: "Completo",
                   price: item.fullBottlePrice,
                 })
               }
@@ -210,7 +210,7 @@ export function PerfumeCard({ item, onOpenLightbox, index = 0 }: PerfumeCardProp
               <span className="flex items-center gap-[8px]">
                 <BottleSmallIcon className="w-[10.3px] h-[13.8px] text-sky-gold shrink-0" />
                 <span className="font-montserrat font-semibold text-[10px] text-sky-cream">
-                  Full Bottle
+                  Completo
                 </span>
               </span>
               <span className="font-playfair font-bold text-[12.5px] text-sky-goldBright">

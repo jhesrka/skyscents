@@ -88,7 +88,7 @@ export function ImageLightboxModal({ item, onClose }: ImageLightboxModalProps) {
         <div className="mt-4 pt-3 border-t border-sky-borderSubtle grid grid-cols-1 sm:grid-cols-3 gap-2 text-center font-montserrat text-[10px]">
           <div className="p-2 rounded bg-sky-bgDarkBox border border-sky-borderSubtle/60">
             <span className="block font-semibold text-sky-goldBright text-[9px] uppercase tracking-wider">
-              Top notes
+              Salida
             </span>
             <span className="text-sky-textDim mt-1 block line-clamp-2">
               {item.notes.salida}
@@ -96,7 +96,7 @@ export function ImageLightboxModal({ item, onClose }: ImageLightboxModalProps) {
           </div>
           <div className="p-2 rounded bg-sky-bgDarkBox border border-sky-borderSubtle/60">
             <span className="block font-semibold text-sky-goldBright text-[9px] uppercase tracking-wider">
-              Heart notes
+              Corazón
             </span>
             <span className="text-sky-textDim mt-1 block line-clamp-2">
               {item.notes.corazon}
@@ -104,7 +104,7 @@ export function ImageLightboxModal({ item, onClose }: ImageLightboxModalProps) {
           </div>
           <div className="p-2 rounded bg-sky-bgDarkBox border border-sky-borderSubtle/60">
             <span className="block font-semibold text-sky-goldBright text-[9px] uppercase tracking-wider">
-              Base notes
+              Fondo
             </span>
             <span className="text-sky-textDim mt-1 block line-clamp-2">
               {item.notes.fondo}

@@ -24,7 +24,7 @@ export default function HomePage() {
         url: "http://skyscentsclub.com/",
         name: "Sky Scents Club",
         description: SITE_CONFIG.heroSubtitle,
-        inLanguage: "en",
+        inLanguage: "es-MX",
         publisher: {
           "@id": "http://skyscentsclub.com/#organization",
         },
@@ -62,9 +62,9 @@ export default function HomePage() {
       {
         "@type": "ItemList",
         "@id": "http://skyscentsclub.com/#catalog",
-        name: "Sky Scents Perfumes and Decants Catalog",
+        name: "Catálogo de Perfumes y Decants Sky Scents",
         description:
-          "3 ml, 5 ml, and 10 ml decants and full bottles of designer and Arabic perfumes in Mexican pesos (MXN).",
+          "Decants de 3 ml, 5 ml y 10 ml y perfumes completos de diseñador y árabes en pesos mexicanos (MXN).",
         numberOfItems: uniqueProducts.length,
         itemListElement: uniqueProducts.map((product, index) => {
           const numericPrice = product.fullBottlePrice.replace(/[^0-9]/g, "");
@@ -81,7 +81,7 @@ export default function HomePage() {
                 "@type": "Brand",
                 name: product.brand,
               },
-              description: `Top notes: ${product.notes.salida}. Heart notes: ${product.notes.corazon}. Base notes: ${product.notes.fondo}.`,
+              description: `Notas de salida: ${product.notes.salida}. Corazón: ${product.notes.corazon}. Fondo: ${product.notes.fondo}.`,
               category: product.section,
               offers: {
                 "@type": "AggregateOffer",
@@ -104,7 +104,7 @@ export default function HomePage() {
         "@id": "http://skyscentsclub.com/#faq",
         mainEntity: FAQ_SIZES.map((faq) => ({
           "@type": "Question",
-          name: `Who is the ${faq.size} ${faq.unit} decant (${faq.subtitle}) recommended for?`,
+          name: `¿Para quién se recomienda el decant de ${faq.size} ${faq.unit} (${faq.subtitle})?`,
           acceptedAnswer: {
             "@type": "Answer",
             text: faq.description,

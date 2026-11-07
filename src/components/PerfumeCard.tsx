@@ -89,7 +89,7 @@ export function PerfumeCard({ item, onOpenLightbox, index = 0 }: PerfumeCardProp
               />
               {/* Subtle Zoom Hint Overlay */}
               <span className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute bottom-1.5 right-1.5 px-1.5 py-0.5 rounded bg-black/75 text-sky-gold text-[8px] font-montserrat tracking-wider pointer-events-none">
-                View details
+                Ver detalle
               </span>
             </div>
           ) : (
@@ -97,7 +97,7 @@ export function PerfumeCard({ item, onOpenLightbox, index = 0 }: PerfumeCardProp
             <div className="flex flex-col items-center justify-center mt-2">
               <BottlePlaceholderIcon className="w-[18.7px] h-[25.6px] text-sky-borderMid transition-transform duration-300 group-hover:scale-105 group-hover:text-sky-gold" />
               <span className="mt-3 font-montserrat font-normal text-[9.2px] tracking-[0.08em] text-sky-textDarkMuted">
-                Image pending
+                Imagen pendiente
               </span>
             </div>
           )}
@@ -115,15 +115,15 @@ export function PerfumeCard({ item, onOpenLightbox, index = 0 }: PerfumeCardProp
           {/* Olfactory Notes */}
           <div className="mt-[8px] space-y-[1.5px] font-montserrat text-[9.2px] leading-[1.38] text-sky-textDim">
             <p>
-              <strong className="font-semibold text-sky-goldBright">Top notes:</strong>{" "}
+              <strong className="font-semibold text-sky-goldBright">Salida:</strong>{" "}
               {item.notes.salida}
             </p>
             <p>
-              <strong className="font-semibold text-sky-goldBright">Heart notes:</strong>{" "}
+              <strong className="font-semibold text-sky-goldBright">Corazón:</strong>{" "}
               {item.notes.corazon}
             </p>
             <p>
-              <strong className="font-semibold text-sky-goldBright">Base notes:</strong>{" "}
+              <strong className="font-semibold text-sky-goldBright">Fondo:</strong>{" "}
               {item.notes.fondo}
             </p>
           </div>
@@ -142,14 +142,14 @@ export function PerfumeCard({ item, onOpenLightbox, index = 0 }: PerfumeCardProp
                 key={decant.label}
                 type="button"
                 aria-pressed={isSelected}
-                aria-label={`Select ${decant.label} for ${item.name} at ${decant.price}`}
+                aria-label={`Seleccionar ${decant.label} for ${item.name} at ${decant.price}`}
                 onClick={() =>
                   setSelectedPresentation({
                     label: decant.label,
                     price: decant.price,
                   })
                 }
-                title="Click to select this size for your order via WhatsApp"
+                title="Haz clic para seleccionar este tamaño para tu pedido por WhatsApp"
                 className={`w-full h-[23.3px] px-[6px] rounded-[5px] border flex items-center justify-between text-left transition-all duration-200 cursor-pointer ${
                   isSelected
                     ? "bg-sky-gold/20 border-sky-gold shadow-[0_0_10px_rgba(200,164,106,0.15)] ring-1 ring-sky-gold/40"
@@ -193,14 +193,14 @@ export function PerfumeCard({ item, onOpenLightbox, index = 0 }: PerfumeCardProp
             <button
               type="button"
               aria-pressed={isSelected}
-              aria-label={`Select full bottle for ${item.name} at ${item.fullBottlePrice}`}
+              aria-label={`Seleccionar perfume completo para ${item.name} at ${item.fullBottlePrice}`}
               onClick={() =>
                 setSelectedPresentation({
                   label: "Full Bottle",
                   price: item.fullBottlePrice,
                 })
               }
-              title="Click to select full bottle for your order via WhatsApp"
+              title="Haz clic para seleccionar perfume completo para tu pedido por WhatsApp"
               className={`mt-[5px] w-full h-[35px] px-[10px] rounded-[7px] border flex items-center justify-between text-left transition-all duration-200 cursor-pointer ${
                 isSelected
                   ? "bg-sky-gold/25 border-sky-goldLight shadow-[0_0_14px_rgba(200,164,106,0.25)] ring-1 ring-sky-goldLight/50"
@@ -222,7 +222,7 @@ export function PerfumeCard({ item, onOpenLightbox, index = 0 }: PerfumeCardProp
 
         {/* Preguntar por existencia */}
         <p className="mt-[6px] mb-[6px] font-montserrat font-normal text-[8.5px] text-sky-textDim">
-          Ask for availability
+          Preguntar por existencia
         </p>
 
         {/* Pedir por WhatsApp CTA Directo */}
@@ -257,10 +257,10 @@ export function PerfumeCard({ item, onOpenLightbox, index = 0 }: PerfumeCardProp
                   d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                 />
               </svg>
-              <span>Opening chat...</span>
+              <span>Abriendo chat...</span>
             </span>
           ) : (
-            "Order via WhatsApp →"
+            "Pedir por WhatsApp →"
           )}
         </a>
       </div>

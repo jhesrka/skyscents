@@ -12,11 +12,11 @@ const SITE_URL = "http://skyscentsclub.com";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Sky Scents | Decants & Full Bottles · Designer & Arabic Fragrances",
+    default: "Sky Scents | Decants y Perfumes Completos · Diseñador y Árabes",
     template: "%s | Sky Scents Club",
   },
   description:
-    "Official catalog of Sky Scents Club (عطر السماء). Bespoke signature fragrances tailored for you: 3 ml, 5 ml, and 10 ml decants and full bottles of designer and Arabic perfumes with nationwide shipping across Mexico via FedEx, DHL, and Estafeta.",
+    "Catálogo oficial de Sky Scents Club (عطر السماء). Perfumes de autor a tu medida: decants de 3 ml, 5 ml y 10 ml y perfumes completos de diseñador y árabes con envío a todo México por FedEx, DHL y Estafeta.",
   applicationName: "Sky Scents Club",
   keywords: [
     "Sky Scents",
@@ -69,12 +69,12 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
+    locale: "es_MX",
     url: SITE_URL,
     siteName: "Sky Scents Club",
-    title: "Sky Scents | Bespoke Signature Fragrances, Tailored for You",
+    title: "Sky Scents | Perfumes de Autor, a tu Medida",
     description:
-      "Official catalog of Sky Scents Club (عطر السماء). Decants in 3, 5, and 10 ml and full bottles of designer and Arabic fragrances with shipping across Mexico.",
+      "Catálogo oficial de Sky Scents Club (عطر السماء). Decants de 3, 5 y 10 ml y botellas completas de diseñador y árabes con envío a todo México.",
     images: [
       {
         url: "/og-image.png",
@@ -87,9 +87,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sky Scents | Decants & Full Bottles · Designer & Arabic Fragrances",
+    title: "Sky Scents | Decants y Perfumes Completos · Diseñador y Árabes",
     description:
-      "Try 3, 5, or 10 ml before buying the full bottle. Official catalog of designer and Arabic perfumes in Mexico.",
+      "Prueba 3, 5 o 10 ml antes de comprar el frasco completo. Catálogo oficial de perfumes de diseñador y árabes en México.",
     images: ["/og-image.png"],
   },
 };
@@ -100,7 +100,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es-MX">
       <head>
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />

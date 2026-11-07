@@ -112,7 +112,7 @@ export function CatalogClient() {
         href="#catalogo"
         className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-sky-gold focus:text-sky-bg focus:font-semibold focus:rounded-md focus:shadow-lg focus:outline-none"
       >
-        Skip to main content
+        Saltar al contenido principal
       </a>
       {/* =====================================================================
           1. TOP NAVBAR (Height 70px + 2.5px gold border)
@@ -123,7 +123,7 @@ export function CatalogClient() {
           <a
             href="#inicio"
             className="flex items-center gap-3 sm:gap-4 group focus:outline-none"
-            aria-label="Sky Scents Home"
+            aria-label="Sky Scents Inicio"
           >
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
@@ -156,8 +156,8 @@ export function CatalogClient() {
                   setSearchQuery(e.target.value);
                   setIsSearchFocused(true);
                 }}
-                placeholder="Search…"
-                aria-label="Search perfumes by name, brand or scent note"
+                placeholder="Buscar…"
+                aria-label="Buscar perfumes por nombre, marca o nota olfativa"
                 className="w-[130px] sm:w-[150px] focus:w-[185px] sm:focus:w-[220px] h-[28px] pl-[30px] pr-[10px] rounded-full bg-sky-card/90 border border-[#c8a66b] font-montserrat font-normal text-[9.5px] text-sky-cream placeholder:text-sky-textMuted focus:outline-none focus:ring-1 focus:ring-sky-gold transition-all duration-300"
               />
 
@@ -165,7 +165,7 @@ export function CatalogClient() {
               {isSearchFocused && searchSuggestions.length > 0 && (
                 <div className="absolute top-[34px] right-0 w-[240px] sm:w-[280px] rounded-xl bg-[#14110d] border border-sky-borderGold/80 shadow-[0_14px_35px_rgba(0,0,0,0.85),0_0_20px_rgba(200,164,106,0.15)] overflow-hidden z-50 animate-fade-in">
                   <div className="px-3 py-1.5 border-b border-sky-borderSubtle/60 text-[8.5px] font-semibold text-sky-textDim uppercase tracking-wider bg-black/40">
-                    Suggested Perfumes
+                    Perfumes sugeridos
                   </div>
                   <div className="divide-y divide-sky-borderSubtle/30 max-h-[260px] overflow-y-auto">
                     {searchSuggestions.map((item) => (
@@ -262,7 +262,7 @@ export function CatalogClient() {
               className="w-[245px] sm:w-[329.4px] h-auto select-none drop-shadow-[0_8px_24px_rgba(0,0,0,0.65)]"
             />
             <h1 className="mt-[21px] font-cormorant font-light text-[11.5px] sm:text-[12.6px] tracking-[0.18em] text-sky-textMuted">
-              Decants & Full Bottles · Designer & Arabic Fragrances
+              Decants y perfumes completos · Diseñador y árabes
             </h1>
           </div>
         </div>
@@ -311,8 +311,8 @@ export function CatalogClient() {
         <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-0 mt-8">
           <div className="flex flex-wrap items-center justify-between gap-3 px-4 py-2.5 rounded-[10px] bg-sky-card border border-sky-borderGold/60 text-[11px]">
             <p className="text-sky-cream">
-              Showing <strong className="text-sky-gold">{totalMatches}</strong>{" "}
-              {totalMatches === 1 ? "result" : "results"} for{" "}
+              Mostrando <strong className="text-sky-gold">{totalMatches}</strong>{" "}
+              {totalMatches === 1 ? "resultado" : "resultados"} para{" "}
               <span className="text-sky-goldLight font-semibold">
                 &ldquo;{searchQuery}&rdquo;
               </span>
@@ -339,8 +339,8 @@ export function CatalogClient() {
           className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-0 pt-[44px]"
         >
           <SectionHeading
-            title="Best Sellers"
-            subtitle="Featured selection · top picks before categories"
+            title="Más vendidos"
+            subtitle="Selección destacada · se mostrará antes de las categorías"
           />
           <div className="mt-[22px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[20px]">
             {filteredMasVendidos.map((item, idx) => (
@@ -364,8 +364,8 @@ export function CatalogClient() {
           className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-0 pt-[54px]"
         >
           <SectionHeading
-            title="Women"
-            subtitle="Decants & full bottles · ask for availability"
+            title="Mujer"
+            subtitle="Decants y perfume completo · preguntar por existencia"
           />
           <div className="mt-[22px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[20px]">
             {filteredMujer.map((item, idx) => (
@@ -389,8 +389,8 @@ export function CatalogClient() {
           className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-0 pt-[54px] scroll-mt-24"
         >
           <SectionHeading
-            title="Designer Perfumes"
-            subtitle="Full bottles & decants · prices in MXN"
+            title="Perfumes de diseñador"
+            subtitle="Perfume completo y decants · precios en MXN"
           />
           <div className="mt-[22px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[20px]">
             {filteredDisenador.map((item, idx) => (
@@ -414,8 +414,8 @@ export function CatalogClient() {
           className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-0 pt-[54px] pb-[60px] scroll-mt-24"
         >
           <SectionHeading
-            title="Arabic Perfumes"
-            subtitle="Decants & 100 ml full bottles · prices in MXN"
+            title="Perfumes árabes"
+            subtitle="Decants y perfume completo 100 ml · precios en MXN"
           />
           <div className="mt-[22px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[20px]">
             {filteredArabes.map((item, idx) => (
@@ -433,10 +433,10 @@ export function CatalogClient() {
       {isSearching && totalMatches === 0 && (
         <div className="max-w-[1000px] mx-auto px-4 py-16 text-center">
           <p className="font-cormorant text-[26px] text-sky-cream">
-            We could not find perfumes matching &ldquo;{searchQuery}&rdquo;
+            No encontramos perfumes que coincidan con &ldquo;{searchQuery}&rdquo;
           </p>
           <p className="mt-2 text-[11.5px] text-sky-textDim">
-            Try another olfactory note (e.g. vanilla, bergamot, coconut) or ask us directly via WhatsApp.
+            Intenta con otra nota olfativa (ej. vainilla, bergamota, coco) o pregúntanos directamente por WhatsApp.
           </p>
         </div>
       )}
@@ -448,7 +448,7 @@ export function CatalogClient() {
         className="w-full bg-sky-card py-[40px] border-t border-b border-sky-borderSubtle/40"
       >
         <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-0">
-          <SectionHeading title="Benefits" />
+          <SectionHeading title="Beneficios" />
           <div className="mt-[18px] grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             {/* Benefit 1 */}
             <div className="flex flex-col items-center group transition-transform duration-300 hover:-translate-y-1">
@@ -498,9 +498,9 @@ export function CatalogClient() {
       >
         <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-0">
           <SectionHeading
-            title="Frequently Asked Questions"
-            subtitle="The real questions our clients ask the most"
-            extraLine="Not sure which size to choose? Here is our guide."
+            title="Preguntas frecuentes"
+            subtitle="Las dudas reales que más nos hacen nuestros clientes"
+            extraLine="¿No sabes qué tamaño pedir? Te explico cuál es para ti."
           />
           <div className="mt-[26px] grid grid-cols-1 md:grid-cols-3 gap-[20px]">
             {FAQ_SIZES.map((faq) => (
@@ -530,27 +530,30 @@ export function CatalogClient() {
       {/* =====================================================================
           9. SECCIÓN: INFORMACIÓN DE ENVÍOS
       ===================================================================== */}
-      <section
+      <AnimatedSection
         id="envios"
         className="w-full bg-sky-card pt-[38px] pb-[34px]"
       >
         <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-0">
-          <SectionHeading title="Shipping Information" />
+          <SectionHeading title="Información de envíos" />
           {/* 4 Shipping Highlight Cards */}
           <div className="mt-[16px] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[13.3px]">
-            {SHIPPING_HIGHLIGHTS.map((item) => (
+            {SHIPPING_HIGHLIGHTS.map((item, idx) => (
               <div
                 key={item.id}
-                className="h-[91.7px] rounded-[12px] bg-sky-bgDarkBox border border-sky-borderGold px-[18px] py-[14px] flex flex-col justify-between"
+                style={{
+                  transitionDelay: `${idx * 60}ms`,
+                }}
+                className="group h-[91.7px] rounded-[12px] bg-sky-bgDarkBox border border-sky-borderGold px-[18px] py-[14px] flex flex-col justify-between transition-all duration-300 hover:border-sky-gold hover:-translate-y-1 hover:shadow-[0_12px_28px_rgba(0,0,0,0.6),0_0_15px_rgba(200,164,106,0.12)] cursor-default"
               >
-                <div className="text-sky-gold">
+                <div className="text-sky-gold transition-transform duration-300 group-hover:scale-110 origin-left">
                   {item.icon === "truck" && <ShipTruckIcon />}
                   {item.icon === "tag" && <ShipTagIcon />}
                   {item.icon === "drop" && <ShipDropIcon />}
                   {item.icon === "clock" && <ShipClockIcon />}
                 </div>
                 <div>
-                  <h3 className="font-playfair font-bold text-[15px] leading-[1.2] text-sky-goldBright">
+                  <h3 className="font-playfair font-bold text-[15px] leading-[1.2] text-sky-goldBright transition-colors duration-200 group-hover:text-sky-cream">
                     {item.title}
                   </h3>
                   <p className="mt-[2px] font-montserrat font-normal text-[10px] text-sky-textDim">
@@ -567,20 +570,20 @@ export function CatalogClient() {
             </p>
             <div className="mt-[8px] flex flex-wrap items-center justify-start gap-[13.3px]">
               {/* FedEx Pill */}
-              <div className="w-[108.3px] h-[36.7px] rounded-full bg-[#f3e9d7] flex items-center justify-center select-none">
+              <div className="w-[108.3px] h-[36.7px] rounded-full bg-[#f3e9d7] flex items-center justify-center select-none transition-all duration-300 hover:scale-105 hover:shadow-[0_4px_16px_rgba(243,233,215,0.2)] cursor-default">
                 <span className="font-montserrat font-extrabold text-[14.2px] tracking-[-0.03em] leading-none">
                   <span className="text-[#4d148c]">Fed</span>
                   <span className="text-[#ff6600]">Ex</span>
                 </span>
               </div>
               {/* DHL Pill */}
-              <div className="w-[108.3px] h-[36.7px] rounded-full bg-[#ffcc00] flex items-center justify-center select-none">
+              <div className="w-[108.3px] h-[36.7px] rounded-full bg-[#ffcc00] flex items-center justify-center select-none transition-all duration-300 hover:scale-105 hover:shadow-[0_4px_16px_rgba(255,204,0,0.3)] cursor-default">
                 <span className="font-montserrat font-extrabold text-[14.2px] tracking-[0.02em] leading-none text-[#d40511]">
                   DHL
                 </span>
               </div>
               {/* Estafeta Pill */}
-              <div className="w-[108.3px] h-[36.7px] rounded-full bg-[#f3e9d7] flex items-center justify-center select-none">
+              <div className="w-[108.3px] h-[36.7px] rounded-full bg-[#f3e9d7] flex items-center justify-center select-none transition-all duration-300 hover:scale-105 hover:shadow-[0_4px_16px_rgba(243,233,215,0.2)] cursor-default">
                 <span className="font-montserrat font-extrabold text-[13.3px] tracking-[-0.01em] leading-none text-[#e2001a]">
                   Estafeta
                 </span>
@@ -600,15 +603,15 @@ export function CatalogClient() {
                   return (
                     <div
                       key={d.day}
-                      className={`w-[51.7px] h-[46.6px] rounded-[10px] bg-sky-bg border flex flex-col items-center justify-center gap-[7px] ${
-                        isGold ? "border-sky-gold" : "border-[#f3e9d7]"
+                      className={`group w-[51.7px] h-[46.6px] rounded-[10px] bg-sky-bg border flex flex-col items-center justify-center gap-[7px] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_6px_16px_rgba(0,0,0,0.5)] cursor-default ${
+                        isGold ? "border-sky-gold hover:bg-sky-gold/10" : "border-[#f3e9d7] hover:border-sky-gold hover:bg-white/5"
                       }`}
                     >
-                      <span className="font-montserrat font-semibold text-[10.8px] leading-none text-sky-cream">
+                      <span className="font-montserrat font-semibold text-[10.8px] leading-none text-sky-cream transition-colors group-hover:text-sky-goldLight">
                         {d.day}
                       </span>
                       <span
-                        className={`w-[5.8px] h-[5.8px] rounded-full ${
+                        className={`w-[5.8px] h-[5.8px] rounded-full transition-transform duration-200 group-hover:scale-125 ${
                           isGold ? "bg-sky-gold" : "bg-[#f3e9d7]"
                         }`}
                       />
@@ -618,13 +621,13 @@ export function CatalogClient() {
               </div>
               {/* Dispatch Schedule Text */}
               <div className="text-center sm:text-left space-y-[5px] font-montserrat font-normal text-[10.8px] text-sky-textDim">
-                <p>Orders Monday through Thursday → ship Friday</p>
-                <p>Orders Friday through Sunday → ship Monday</p>
+                <p>Pedidos de lunes a jueves → salen el viernes</p>
+                <p>Pedidos de viernes a domingo → salen el lunes</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </AnimatedSection>
       {/* =====================================================================
           10. SECCIÓN: BANNER WHATSAPP + CONTACTO (Redes Sociales)
       ===================================================================== */}
@@ -648,46 +651,66 @@ export function CatalogClient() {
               Chat on WhatsApp
             </a>
           </div>
-          {/* Contact Socials (Display only, no links) */}
+          {/* Contact Socials */}
           <div className="mt-[64px]">
-            <SectionHeading title="Contact" />
+            <SectionHeading title="Contacto" />
             <div className="mt-[18px] flex flex-wrap items-center justify-center gap-[28px] sm:gap-[35px]">
               {/* Instagram */}
-              <div className="group flex flex-col items-center gap-[10px] select-none">
-                <div className="w-[48.4px] h-[48.4px] rounded-full border border-sky-gold flex items-center justify-center text-sky-gold transition-all duration-200">
+              <a
+                href={SITE_CONFIG.socials.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col items-center gap-[10px] select-none transition-transform duration-200 hover:-translate-y-1"
+              >
+                <div className="w-[48.4px] h-[48.4px] rounded-full border border-sky-gold flex items-center justify-center text-sky-gold transition-all duration-200 group-hover:bg-sky-gold group-hover:text-sky-bg group-hover:shadow-[0_0_15px_rgba(200,164,106,0.35)]">
                   <SocialInstagramIcon />
                 </div>
-                <span className="font-montserrat font-normal text-[9.2px] text-sky-textDim">
+                <span className="font-montserrat font-normal text-[9.2px] text-sky-textDim group-hover:text-sky-goldLight transition-colors">
                   Instagram
                 </span>
-              </div>
+              </a>
               {/* Facebook */}
-              <div className="group flex flex-col items-center gap-[10px] select-none">
-                <div className="w-[48.4px] h-[48.4px] rounded-full border border-sky-gold flex items-center justify-center text-sky-gold transition-all duration-200">
+              <a
+                href={SITE_CONFIG.socials.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col items-center gap-[10px] select-none transition-transform duration-200 hover:-translate-y-1"
+              >
+                <div className="w-[48.4px] h-[48.4px] rounded-full border border-sky-gold flex items-center justify-center text-sky-gold transition-all duration-200 group-hover:bg-sky-gold group-hover:text-sky-bg group-hover:shadow-[0_0_15px_rgba(200,164,106,0.35)]">
                   <SocialFacebookIcon />
                 </div>
-                <span className="font-montserrat font-normal text-[9.2px] text-sky-textDim">
+                <span className="font-montserrat font-normal text-[9.2px] text-sky-textDim group-hover:text-sky-goldLight transition-colors">
                   Facebook
                 </span>
-              </div>
+              </a>
               {/* TikTok */}
-              <div className="group flex flex-col items-center gap-[10px] select-none">
-                <div className="w-[48.4px] h-[48.4px] rounded-full border border-sky-gold flex items-center justify-center text-sky-gold transition-all duration-200">
+              <a
+                href={SITE_CONFIG.socials.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col items-center gap-[10px] select-none transition-transform duration-200 hover:-translate-y-1"
+              >
+                <div className="w-[48.4px] h-[48.4px] rounded-full border border-sky-gold flex items-center justify-center text-sky-gold transition-all duration-200 group-hover:bg-sky-gold group-hover:text-sky-bg group-hover:shadow-[0_0_15px_rgba(200,164,106,0.35)]">
                   <SocialTikTokIcon />
                 </div>
-                <span className="font-montserrat font-normal text-[9.2px] text-sky-textDim">
+                <span className="font-montserrat font-normal text-[9.2px] text-sky-textDim group-hover:text-sky-goldLight transition-colors">
                   TikTok
                 </span>
-              </div>
+              </a>
               {/* WhatsApp */}
-              <div className="group flex flex-col items-center gap-[10px] select-none">
-                <div className="w-[48.4px] h-[48.4px] rounded-full border border-sky-gold flex items-center justify-center text-sky-gold transition-all duration-200">
+              <a
+                href={SITE_CONFIG.socials.whatsapp}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex flex-col items-center gap-[10px] select-none transition-transform duration-200 hover:-translate-y-1"
+              >
+                <div className="w-[48.4px] h-[48.4px] rounded-full border border-sky-gold flex items-center justify-center text-sky-gold transition-all duration-200 group-hover:bg-sky-gold group-hover:text-sky-bg group-hover:shadow-[0_0_15px_rgba(200,164,106,0.35)]">
                   <WhatsAppOutlineIcon className="w-[17.5px] h-[17px]" />
                 </div>
-                <span className="font-montserrat font-normal text-[9.2px] text-sky-textDim">
+                <span className="font-montserrat font-normal text-[9.2px] text-sky-textDim group-hover:text-sky-goldLight transition-colors">
                   WhatsApp
                 </span>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -701,7 +724,7 @@ export function CatalogClient() {
         className="w-full bg-sky-card pt-[36px] pb-[34px]"
       >
         <div className="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-0">
-          <SectionHeading title="Payment Methods" />
+          <SectionHeading title="Métodos de pago" />
           <div className="mt-[18px] grid grid-cols-1 md:grid-cols-3 gap-[20px]">
             {/* Bank Deposit */}
             <div className="h-[91.7px] rounded-[12px] bg-sky-bgDarkBox border border-sky-borderGold flex flex-col items-center justify-center gap-[12px]">
@@ -747,7 +770,15 @@ export function CatalogClient() {
             className="h-[44.5px] w-auto object-contain select-none"
           />
           <p className="mt-[8px] font-montserrat font-normal text-[8.4px] text-sky-textMuted tracking-[0.01em]">
-            © Sky Scents Club — Data Protection & Rights Reserved - Made by Palacios MKT
+            © Sky Scents Club — Protección de Datos y Derechos - Hecho por{" "}
+            <a
+              href="https://palaciosmkt.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sky-cream hover:text-sky-gold underline underline-offset-2 transition-colors"
+            >
+              Palacios MKT
+            </a>
           </p>
         </div>
       </footer>

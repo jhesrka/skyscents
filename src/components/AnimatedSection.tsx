@@ -16,7 +16,10 @@ export function AnimatedSection({
   children,
   delayMs = 0,
 }: AnimatedSectionProps) {
-  const { ref, isVisible } = useScrollReveal();
+  const { ref, isVisible } = useScrollReveal({
+    threshold: 0,
+    rootMargin: "0px 0px 100px 0px",
+  });
 
   return (
     <section
